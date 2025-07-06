@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RentWala | Find Your Room</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>🏠 Rent<span>Wala</span></h1>
+      <button class="post-room-btn">Post Your Room</button>
+    </nav>
+    
+
+  </header>
+
+  <section class="hero">
+    <h2>Find Your Perfect Room</h2>
+    <div class="search-box">
+      <input type="text" placeholder="Location">
+      <input type="number" placeholder="Max Budget ₹">
+      <select>
+        <option value="">Room Type</option>
+        <option value="pg">PG</option>
+        <option value="1bhk">1BHK</option>
+        <option value="2bhk">2BHK</option>
+      </select>
+      <button onclick="searchRooms()">Search</button>
+    </div>
+  </section>
+
+  <section class="room-listings">
+    <h3>Latest Rooms</h3>
+    <div class="room-card">
+      <img src="https://via.placeholder.com/250x150" alt="Room Image">
+      <h4>₹5000/month - 1BHK in Patna</h4>
+      <p>Near Boring Road, semi-furnished</p>
+      <button>Contact Owner</button>
+    </div>
+    <div class="room-card">
+      <img src="https://via.placeholder.com/250x150" alt="Room Image">
+      <h4>₹3500/month - PG in Delhi</h4>
+      <p>Single bed, shared washroom</p>
+      <button>Contact Owner</button>
+    </div>
+    <div class="room-card">
+      <img src="https://via.placeholder.com/250x150" alt="Room Image">
+      <h4>₹8000/month - 2BHK in Mumbai</h4>
+      <p>Fully furnished, family only</p>
+      <button>Contact Owner</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Post Room | RentWala</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>🏠 Rent<span>Wala</span></h1>
+      <a href="index.html" class="post-room-btn">Home</a>
+    </nav>
+  </header>
+
+  <section class="form-section">
+    <h2>Post Your Room Details</h2>
+    <form id="roomForm">
+      <input type="text" placeholder="Owner Name" required />
+      <input type="text" placeholder="Location (e.g. Patna, Delhi)" required />
+      <input type="number" placeholder="Monthly Rent ₹" required />
+      <select required>
+        <option value="">Room Type</option>
+        <option value="pg">PG</option>
+        <option value="1bhk">1BHK</option>
+        <option value="2bhk">2BHK</option>
+      </select>
+      <input type="text" placeholder="Nearby Landmark" />
+      <input type="tel" placeholder="Contact Number" required />
+      <textarea placeholder="Description" rows="4" required></textarea>
+      <input type="file" accept="image/*" required />
+      <button type="submit">Submit Room</button>
+    </form>
+  </section>
+
+  <script>
+    document.getElementById('roomForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Room submitted successfully (functionality coming soon!)');
+    });
+  </script>
+</body>
+</html>
